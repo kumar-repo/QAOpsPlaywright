@@ -1,0 +1,5 @@
+[ 'ADIDAS ORIGINAL', 'ZARA COAT 3', 'iphone 13 pro' ]
+selected product name : 
+iphone 13 pro
+* Invalid Coupon
+purchased product order id: 69c9e1a9f86ba51a653504e2

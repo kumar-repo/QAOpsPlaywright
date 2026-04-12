@@ -1,0 +1,7 @@
+Jenkins URL: http://localhost:9090/
+login: yeshwantk
+pass:Testact@1902audi
+email: ykumar.vk@gmail.com
+jenkins start command: cd /path/to/Jenkins
+java -jar jenkins.war --httpPort=9090
+jenkins initial pass dir:  cd /Users/kumar/.jenkins/secrets/

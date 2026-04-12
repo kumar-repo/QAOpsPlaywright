@@ -1,0 +1,4 @@
+npx playwright test EcommersE2ETestPO.spec.js --reporter=line,allure-playwright
+rm -rf allure-report
+npx allure generate -o allure-report ./allure-results
+npx allure open allure-report

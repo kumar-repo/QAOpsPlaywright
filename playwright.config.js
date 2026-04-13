@@ -14,6 +14,7 @@ timeout:40*1000,
 expect:{
   timeout:3000,
 },
+// reporter is generated in html format and stored in the report folder
   reporter: 'html',
   /* Run tests in files in parallel */
 use:{

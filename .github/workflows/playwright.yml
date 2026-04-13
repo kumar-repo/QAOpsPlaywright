@@ -40,8 +40,5 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
-<<<<<<< HEAD
-          retention-days: 30
-=======
-          retention-days: 30
->>>>>>> f04560f (Update workflow and gitignore)
+
+          retention-days: 3

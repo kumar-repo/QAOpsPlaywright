@@ -15,6 +15,7 @@ expect:{
   timeout:3000,
 },
   reporter: 'html',
+  /* Run tests in files in parallel */
 use:{
   browserName :'chromium',
   headless: false,

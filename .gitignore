@@ -1,10 +1,9 @@
 
 # Playwright
 /test-results/
-/playwright-report/
 /blob-report/
 Jenkins-setup Readme
 cucumber-report/
 allure-results/
 allure-report/
-.DS_Store
+.DS_Storeplaywright-report/

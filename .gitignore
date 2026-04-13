@@ -2,7 +2,8 @@
 # Playwright
 /test-results/
 /blob-report/
-Jenkins-setup Readme
+/playwright-report/
+"Jenkins-setup Readme"
 cucumber-report/
 allure-results/
 allure-report/

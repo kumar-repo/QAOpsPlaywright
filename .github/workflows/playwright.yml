@@ -36,7 +36,7 @@ jobs:
           PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
           PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report
           DEBUG: pw:api
-        run: npx playwright test tests/LaunchWebPageTest.spec.js --config=playwright.service.config.js --workers=1
+        run: npx playwright test  --config=playwright.service.config.js --workers=1
 
       - name: Debug workspace files
         if: always()

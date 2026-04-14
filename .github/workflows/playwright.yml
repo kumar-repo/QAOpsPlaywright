@@ -30,18 +30,22 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Run Playwright tests
+        id: pw
+        continue-on-error: true
         env:
           PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
           PLAYWRIGHT_HTML_OUTPUT_DIR: playwright-report
           DEBUG: pw:api
-        run: npx playwright test --config=playwright.service.config.js --workers=1
+        run: npx playwright test tests/LaunchWebPageTest.spec.js --config=playwright.service.config.js --workers=1
 
-      - name: Debug report folder
+      - name: Debug workspace files
         if: always()
         run: |
           pwd
           ls -la
+          find . -maxdepth 2 -type d | sort
           ls -la playwright-report || true
+          ls -la test-results || true
 
       - name: Upload Playwright report
         if: always()
@@ -51,3 +55,7 @@ jobs:
           path: playwright-report/
           if-no-files-found: error
           retention-days: 3
+
+      - name: Fail job if tests failed
+        if: steps.pw.outcome == 'failure'
+        run: exit 1

@@ -6,7 +6,7 @@ test('Launch google page', async ({browser})=>
     const page =await context.newPage();
      page.goto("https://www.google.com/");
 });
-test('Launch page', async ({page})=>
-{
-     await page.goto("https://www.google.com/");
-});
+// test('Launch page', async ({page})=>
+// {
+//      await page.goto("https://www.google.com/");
+// });

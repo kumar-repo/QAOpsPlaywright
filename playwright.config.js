@@ -21,7 +21,7 @@ use:{
   browserName :'chromium',
   headless: false,
   screenshot:'only-on-failure',
-  trace:'on'
+  trace:'retain-on-failure'
 }
 });
 module.exports=config

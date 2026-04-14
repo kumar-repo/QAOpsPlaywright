@@ -1,7 +1,7 @@
-const { LoginPage } = require('../pageobject/loginpage');
-const { DashboardPage } = require('../pageobject/DashboardPage');
-const { VerifyProductAndCheckOut } = require('../pageobject/VerfiyProductAndCheckOut');
-const{OrderConfirmation} = require('../pageobject/OrderConfirmation');
+const { LoginPage } = require('./LoginPage');
+const { DashboardPage } = require('./DashboardPage');
+const { VerifyProductAndCheckOut } = require('./VerfiyProductAndCheckOut');
+const{OrderConfirmation} = require('./OrderConfirmation');
 
 class POManager {
     constructor(page) {

@@ -1,6 +1,7 @@
 //const { expect } = require('@playwright/test');
 
 import { Page , Locator} from "@playwright/test";
+import { POManager } from "./POManager";
 
 export class LoginPage {
 
@@ -33,4 +34,4 @@ async goto () {
 
 }
 
-module.exports = { LoginPage }  ;
+export default POManager;
